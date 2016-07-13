@@ -1,11 +1,66 @@
+$fontcolor:  rgb(10%, 10%, 10%);
+$backgroundcolor: rgb(98%, 98%, 98%);
+
+
 body {
   font-family: "Roboto", sans-serif;
-  color: rgb(10%, 10%, 10%);
-  background: darken(white, 0.2);
+  color: $fontcolor;
+  background-color: $backgroundcolor;
   margin: 50px;
 }
 
+#app{
+  background-color: rgb(237,237,237);
+}
 
-:fullscreen a {
-    display: flex
+
+#search-bar {
+  margin-bottom: 20px;
+  padding: 7px 30px 7px 30px;
+  border: 1px solid lightgrey;
+  background-color: $backgroundcolor;
+  input {
+    padding: 10px;
+    font-size: 1.5em;
+    border-radius: .25em;
+    margin: 0px 0px 0px 67.5px;
+    max-width: 1066px;
+  }
+}
+
+
+#video-section {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1066px;
+  display: flex;
+  ul{
+    background-color: $backgroundcolor;
+    border-radius: .25em;
+    padding-left: 0px;
+    margin-left: 30px;
+    border: 1px solid lightgrey;
+  }
+  li {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    width: 25vw;
+    padding: 10px;
+    img {
+      margin-right: 10px;
+    }
+  }
+  li:hover {
+    background: darken( $backgroundcolor, 10% );
+  }
+
+  .details{
+    background-color: $backgroundcolor;
+    border-radius: .25em;
+    padding: 15px 15px 15px 15px;
+    margin-top: 15px;
+    border: 1px solid lightgrey;
+  }
+
 }
