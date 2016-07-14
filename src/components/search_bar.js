@@ -11,7 +11,7 @@ class SearchBar extends Component {
   // add this above your render method
   onInputChange(event) {
     this.setState({ searchterm: event.target.value });
-    this.props.onSearchChange(this.state.searchterm);
+    this.props.onSearchChange(event.target.value);
     console.log(event.target.value);
   }
   render() {
